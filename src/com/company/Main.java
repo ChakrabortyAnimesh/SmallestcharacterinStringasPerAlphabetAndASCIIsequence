@@ -15,7 +15,15 @@ public class Main {
     }
 
     private static char minimumCharValue(String str,int size) {
-        char min='Z';
+        /*
+        * 	Letter	ASCII Code
+        *    A            65
+        *    Z            90
+        *    a            97
+        *    z            122
+
+        * */
+        char min='z';//Previous i put capital Z
         for(int i=0;i<size-1;i++)
         {
             if(str.charAt(i)<min)
